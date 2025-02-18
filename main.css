@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: brown;
+    animation-name: tiki;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes tiki {
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: red;
+    }
+    100%{
+        background-color: antiquewhite;
+    }
+}
+.hero{
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    transform: translate(0,0);
+    animation-name: liki;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: normal;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    /* animation-play-state: paused; */
+}
+@keyframes liki {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: scaleX(500px);
+        border-radius: 100%;
+    }
+    75%{
+        transform: translate(500px, 500px);
+        border-radius: 12%;
+        background-color: blue;
+    }
+    100%{
+        
+    }
+}
